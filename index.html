@@ -35,6 +35,7 @@
         onclick="navigateTo('About')">
     About
 </button>
+
     </div>
   </div>
 <!-- MAIN PAGE: HOME + PROJECTS -->
@@ -85,23 +86,38 @@
 
     <h2 class="w3-text-black w3-center">Brand Identity & Logo Design</h2>
     <p>A little about myself</p>
+<div class="gallery">
 
-    <div class="gallery">
-      <div class="gallery-item">
-        <img src="BrandIdentity/LustreLogosCover.pdf" class="clickable-img" alt="Wall site">
-        <div class="overlay-text">Logo Design</div>
-      </div>
+    <div class="gallery-item"> 
+
+        <img src="BrandIdentity/LustreLogosCover.pdf"
+             alt="Lustre Logo Design"
+             onclick="openProject('Lustre')">
+
+        <div class="overlay-text">
+            Logo Design
+        </div>
+
+    </div>
+
+</div>
 
       <div class="gallery-item">
         <img src="BrandIdentity/FinalLogo.png" class="clickable-img" alt="Stones">
         <div class="overlay-text">Collection of stones from the site</div>
-      </div>
+ </div>
 
 <div class="gallery-item">
-        <img src="BrandIdentity/SpaceArtLabLogo.pdf" class="clickable-img" alt="Stones">
-        <div class="overlay-text">Collection of stones from the site</div>
-      </div>
 
+    <img src="BrandIdentity/SpaceArtLabLogo.pdf"
+         alt="Space Art Lab Logo"
+         onclick="openProject('SpaceArtLab')">
+
+    <div class="overlay-text">
+        Space Art Lab Logo Design
+    </div>
+
+</div>
 
     <h2 class="w3-text-black w3-center w3-margin-top">Booklets</h2>
     <p>Write stuff here.</p>
@@ -123,12 +139,7 @@
         <div class="overlay-text">These hands collect one of the essence attributes to Abu Dhabi, one of the most abundant substances</div>
       </div>
 
-      <div class="gallery-item">
-        <img src="What_The_Hands_Remember/Paint 2.png" class="clickable-img" alt="Paint 2">
-        <div class="overlay-text">While the hands for this painting seem to be holding nothing, the fabric of the canvas is soaked with a rich fragance, a dominant product found across the emirates.</div>
-      </div>
 
-   
 
   <!-- GRAPHIC DESIGN CONTENT -->
 <div id="graphicDesign" class="w3-container w3-margin-top">
@@ -164,11 +175,240 @@
         </a>   
       </div>
 
-      <div class="gallery-item rounded-img">
-        <img src="GraphicDesign/ClimbingClubPosterFinal.pdf" alt="Poster 4">
-        <div class="overlay-text">NYUAD Climbing Club Poster. January 25, 2025</div>
-      </div>
+  
     </div> <!-- closing gallery -->
+
+<!-- LUSTRE PROJECT PAGE -->
+
+<div id="Lustre" class="art">
+
+    <div class="w3-container">
+
+        <!-- BACK BUTTON -->
+        <button class="w3-button w3-border w3-margin-top"
+                onclick="navigateTo('MainPage', 'Projects')">
+            ← Back to Projects
+        </button>
+
+
+        <!-- PROJECT TITLE -->
+        <h1 class="w3-center w3-padding-32">
+            LUSTRE
+        </h1>
+
+        <h2 class="w3-center">
+            Brand Identity & Logo Design
+        </h2>
+
+
+        <!-- PROJECT INTRODUCTION -->
+        <div class="project-description">
+
+            <p>
+                Introduce the project here. Explain the concept,
+                the purpose of the brand, and the ideas behind
+                your visual identity.
+            </p>
+
+        </div>
+
+
+        <!-- SECTION 1: INITIAL EXPLORATIONS -->
+        <div class="project-section">
+
+            <h2>01. Initial Explorations</h2>
+
+            <p>
+                Describe your initial research, sketches,
+                references, and the first directions you explored.
+            </p>
+
+            <div class="project-gallery">
+
+                <img src="BrandIdentity/LustreSketches1.png"
+                     alt="Initial logo sketches">
+
+                <img src="BrandIdentity/LustreSketches2.png"
+                     alt="Further logo explorations">
+
+            </div>
+
+        </div>
+
+
+        <!-- SECTION 2: DEVELOPMENT -->
+        <div class="project-section">
+
+            <h2>02. Design Development</h2>
+
+            <p>
+                Explain how you developed your ideas, refined
+                the compositions, and selected the final direction.
+            </p>
+
+            <div class="project-gallery">
+
+                <img src="BrandIdentity/LustreDevelopment1.png"
+                     alt="Logo development">
+
+                <img src="BrandIdentity/LustreDevelopment2.png"
+                     alt="Logo variations">
+
+            </div>
+
+        </div>
+
+
+        <!-- SECTION 3: FINAL DESIGN -->
+        <div class="project-section">
+
+            <h2>03. Final Identity</h2>
+
+            <p>
+                Present the final logo and explain the visual
+                elements that define the brand identity.
+            </p>
+
+            <div class="project-gallery">
+
+                <img src="BrandIdentity/FinalLogo.png"
+                     alt="Final Lustre logo">
+
+            </div>
+
+        </div>
+
+
+        <!-- BACK TO PROJECTS -->
+        <div class="w3-center w3-padding-32">
+
+            <button class="w3-button w3-black"
+                    onclick="navigateTo('MainPage', 'Projects')">
+                ← Back to Projects
+            </button>
+
+        </div>
+
+    </div>
+
+</div> <!-- closing #Lustre -->
+
+<!-- SPACE ART LAB PROJECT PAGE -->
+
+<div id="SpaceArtLab" class="art">
+
+    <div class="w3-container">
+
+        <!-- BACK BUTTON -->
+        <button class="w3-button w3-border w3-margin-top"
+                onclick="navigateTo('MainPage', 'Projects')">
+            ← Back to Projects
+        </button>
+
+
+        <!-- PROJECT TITLE -->
+        <h1 class="w3-center w3-padding-32">
+            SPACE ART LAB
+        </h1>
+
+        <h2 class="w3-center">
+            Brand Identity & Logo Design
+        </h2>
+
+
+        <!-- PROJECT INTRODUCTION -->
+        <div class="project-description">
+
+            <p>
+                Write a brief introduction to the Space Art Lab project.
+                Explain the purpose of the visual identity and
+                the ideas that informed your design.
+            </p>
+
+        </div>
+
+
+        <!-- SECTION 1: RESEARCH -->
+        <div class="project-section">
+
+            <h2>01. Research & Inspiration</h2>
+
+            <p>
+                Describe your research, references, and the initial
+                ideas that inspired the identity.
+            </p>
+
+            <div class="project-gallery">
+
+                <img src="BrandIdentity/SpaceArtLabResearch1.png"
+                     alt="Space Art Lab research">
+
+                <img src="BrandIdentity/SpaceArtLabResearch2.png"
+                     alt="Space Art Lab visual references">
+
+            </div>
+
+        </div>
+
+
+        <!-- SECTION 2: LOGO EXPLORATIONS -->
+        <div class="project-section">
+
+            <h2>02. Logo Explorations</h2>
+
+            <p>
+                Explain your initial sketches, visual experiments,
+                and the development of the logo.
+            </p>
+
+            <div class="project-gallery">
+
+                <img src="BrandIdentity/SpaceArtLabSketches.png"
+                     alt="Initial logo sketches">
+
+                <img src="BrandIdentity/SpaceArtLabDevelopment.png"
+                     alt="Logo development">
+
+            </div>
+
+        </div>
+
+
+        <!-- SECTION 3: FINAL IDENTITY -->
+        <div class="project-section">
+
+            <h2>03. Final Identity</h2>
+
+            <p>
+                Present the final logo and explain the meaning
+                behind its visual elements.
+            </p>
+
+            <div class="project-gallery">
+
+                <img src="BrandIdentity/SpaceArtLabFinal.png"
+                     alt="Final Space Art Lab identity">
+
+            </div>
+
+        </div>
+
+
+        <!-- BACK TO PROJECTS -->
+        <div class="w3-center w3-padding-32">
+
+            <button class="w3-button w3-black"
+                    onclick="navigateTo('MainPage', 'Projects')">
+                ← Back to Projects
+            </button>
+
+        </div>
+
+    </div>
+
+</div> <!-- closing SpaceArtLab -->
+
+
   </div> <!-- closing #graphicDesign -->
 
   <!-- About Section -->

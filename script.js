@@ -69,6 +69,32 @@ navigateTo('MainPage', 'Home');
     img.src = "Images/Final_Logo5.png";
   }, 4000);
 }
+// OPEN INDIVIDUAL PROJECT PAGE
+
+function openProject(projectName) {
+
+    // Hide all existing pages
+    var pages = document.getElementsByClassName("art");
+
+    for (var i = 0; i < pages.length; i++) {
+        pages[i].style.display = "none";
+    }
+
+    // Show the selected project
+    var project = document.getElementById(projectName);
+
+    project.style.display = "block";
+
+    // Start at the top of the project page
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+
+}
+
+
+
 
 magic();
 setInterval(magic, 5000);
