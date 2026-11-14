@@ -1,14 +1,49 @@
 
 
-function openArt(artName) {var i;
-  var x = document.getElementsByClassName("art");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  document.getElementById(artName).style.display = "block";  
+// NAVIGATION BETWEEN MAIN PAGE AND ABOUT
+
+function navigateTo(pageName, sectionName) {
+
+    // Hide all separate pages
+    var pages = document.getElementsByClassName("art");
+
+    for (var i = 0; i < pages.length; i++) {
+        pages[i].style.display = "none";
+    }
+
+    // Show the selected page
+    var selectedPage = document.getElementById(pageName);
+    selectedPage.style.display = "block";
+
+    // If a section was specified, scroll to it
+    if (sectionName) {
+
+        var section = document.getElementById(sectionName);
+
+        // Allow the page to become visible before scrolling
+        requestAnimationFrame(function() {
+
+            section.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+
+        });
+
+    } else {
+
+        // If no section is specified (About),
+        // scroll to the top of the page
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+
+    }
 }
 
-  openArt('Home'); // show Home when page loads
+// Show the main page when the website loads
+navigateTo('MainPage', 'Home');
 
   function magic(){
     let img = document.getElementById("myImage");

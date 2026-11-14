@@ -21,29 +21,66 @@
       <!-- LOGO -->
       <img id="myImage" src="Images/Final_Logo1.png" alt="Logo" style="max-height: 40px; width: auto;" class="w3-bar-item"> 
 
-      <button class="w3-bar-item w3-button" onclick="openArt('Home')">Home</button>
-      <button class="w3-bar-item w3-button" onclick="openArt('Projects')">Projects</button>
-      <button class="w3-bar-item w3-button" onclick="openArt('About')">About</button>
+      <button class="w3-bar-item w3-button"
+        onclick="navigateTo('MainPage', 'Home')">
+    Home
+</button>
+
+<button class="w3-bar-item w3-button"
+        onclick="navigateTo('MainPage', 'Projects')">
+    Projects
+</button>
+
+<button class="w3-bar-item w3-button"
+        onclick="navigateTo('About')">
+    About
+</button>
     </div>
   </div>
+<!-- MAIN PAGE: HOME + PROJECTS -->
 
-  <!------------------------- Home section ------------------------------>
-  <div id="Home" class="art" style="padding-top: 50px;">
-    <header class="w3-display-container w3-content" style="max-width:1500px">
-      <img class="w3-image" src="Images/geodaNewPortrait.png" alt="Me" style="width:100%; height:auto;">
+<div id="MainPage" class="art">
 
-      <div class="w3-display-middle w3-padding-large w3-border w3-wide w3-text-light-grey w3-center w3-animate-fading"
-           style="background: rgba(0,0,0,0.6); max-width: 90%;">
-        <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge w3-animate-fading">ISABELLA HERNANDEZ</h1>
-        <h5 class="w3-hide-large" style="letter-spacing: 2px;">ISABELLA HERNANDEZ</h5>
-        <h3 class="w3-hide-medium w3-hide-small w3-animate-fading">VISUAL ARTIST</h3>
-      </div>
-    </header>
-  </div>
+    <!-- HOME SECTION -->
+    <section id="Home">
+
+        <header class="w3-display-container w3-content"
+                style="max-width:1500px">
+
+            <img class="w3-image"
+                 src="Images/geodaNewPortrait.png"
+                 alt="Me"
+                 style="width:100%; height:auto;">
+
+            <div class="w3-display-middle w3-padding-large
+                        w3-border w3-wide w3-text-light-grey
+                        w3-center w3-animate-fading"
+                 style="background: rgba(0,0,0,0.6); max-width:90%;">
+
+                <h1 class="w3-hide-medium w3-hide-small
+                           w3-xxxlarge w3-animate-fading">
+                    ISABELLA HERNANDEZ
+                </h1>
+
+                <h5 class="w3-hide-large"
+                    style="letter-spacing:2px;">
+                    ISABELLA HERNANDEZ
+                </h5>
+
+                <h3 class="w3-hide-medium w3-hide-small
+                           w3-animate-fading">
+                    VISUAL ARTIST
+                </h3>
+
+            </div>
+
+        </header>
+
+    </section>
 
 
   <!-- PROJECTS CONTENT -->
-  <div id="Projects" class="w3-container art w3-margin-top">
+ <section id="Projects" class="w3-container w3-margin-top">
     <h1 class="w3-text-black w3-center w3-padding-32"><b>Projects</b></h1>
 
     <h2 class="w3-text-black w3-center">Brand Identity & Logo Design</h2>
@@ -94,7 +131,7 @@
    
 
   <!-- GRAPHIC DESIGN CONTENT -->
-  <div id="graphicDesign" class="w3-container art w3-margin-top">
+<div id="graphicDesign" class="w3-container w3-margin-top">
     <h1 class="w3-text-black w3-center w3-padding-32"><b>Design Philosophy</b></h1>
     <p>I believe graphic design should communicate ideas with clarity, intention, and visual impact, serving both people and society by making information meaningful and accessible. Designers play a key role in shaping culture and solving problems by identifying the core objective of a project and balancing aesthetics with functionality according to its purpose. Efficient design goes beyond personal preference or trends; it is memorable, purposeful, and, most importantly, clearly understood by its intended audience. Informed by my background and interests in cultural memory and storytelling, I merge research, symbolism, and contemporary design practices to create work that is visually engaging, conceptually grounded, and capable of connecting audiences to ideas, identities, and narratives in a thoughtful and lasting way.</p>
 

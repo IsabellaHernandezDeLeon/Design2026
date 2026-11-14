@@ -58,13 +58,26 @@ p {
   color: rgb(191, 217, 243);
 }
 
-.art {
-  display: none;
-  padding-top: 80px;
-} 
 
-#Home {
-  display: block;
+.art {
+    display: none;
+    padding-top: 80px;
+}
+
+/* Show the main page when the website loads */
+#MainPage {
+    display: block;
+}
+
+/* Account for the fixed navigation bar when scrolling */
+#Home,
+#Projects {
+    scroll-margin-top: 70px;
+}
+
+/* Smooth scrolling throughout the website */
+html {
+    scroll-behavior: smooth;
 }
 
 #Collections {
